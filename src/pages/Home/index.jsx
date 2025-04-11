@@ -2,23 +2,24 @@ import React from "react";
 import { CgDanger } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import Button from "../../components/shared/Button";
+import Services from "./components/Services";
 
 const Home = () => {
   return (
-    <div className="space-y-10 py-20 px-6 md:max-w-[75rem] mx-auto">
+    <div className="space-y-14 pb-20 pt-28 md:pb-28 md:pt-32 px-6 md:max-w-[75rem] mx-auto">
       <div>Image div</div>
       <div className="text-center">
-        <h3 className="font-medium text-red-600">
+        <h3 className="font-medium md:text-3xl text-xl text-[#e43c39] mb-4">
           Competence and experience for your health Family doctor Rheindahlen
         </h3>
-        <p className="font-extralight">
+        <p className="font-light md:text-3xl text-xl">
           Your own health is a very personal matter. We at your Rheindahlen
           family doctor understand this, and we repay the trust you place in us
           with maximum commitment. Because the well-being of our patients is our
           driving force.
         </p>
       </div>
-      <div className="border-[0.5px] border-[#f29549] mx-8 p-8 flex gap-4">
+      <div className="border-[0.5px] border-[#f29549] md:mx-8 p-8 flex gap-4">
         <CgDanger className="text-[#f29549]" />
         <div className="space-y-10">
           <p className="text-red-600 font-bold text-xl">
@@ -33,10 +34,11 @@ const Home = () => {
             </a>
           </p>
           <Link to="/contact">
-            <Button title="Contact Form" className="mt-10" />
+            <Button title="Contact Form" className="mt-10 rounded-md" />
           </Link>
         </div>
       </div>
+      <Services />
     </div>
   );
 };

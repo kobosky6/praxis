@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [menuOpen]);
   return (
     <nav
-      className={`fixed w-full z-50 flex items-center justify-between px-4 md:px-10 py-4 shadow-md`}
+      className={`fixed w-full z-50 flex items-center justify-between px-4 md:px-10 py-4 shadow-lg`}
     >
       <Link href="/" className="inline-flex gap-2 items-center font-bold">
         <img src={logo} alt="" />
