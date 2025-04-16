@@ -7,6 +7,7 @@ const Button = ({
   variant = "primary",
   loading = false,
   className = "",
+  icon = null,
   loadingText = "Loading...",
   ...props
 }) => (
@@ -27,6 +28,9 @@ const Button = ({
     disabled={loading || props.disabled}
     {...props}
   >
+    {icon && (
+      <span className={`bg-opacity-50 ${title ? "mr-2" : ""}`}>{icon}</span>
+    )}
     {!loading && title && <span>{title}</span>}
     {loading && <span>{loadingText}</span>}
     {loading && (

@@ -3,6 +3,8 @@ import { CgDanger } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import Button from "../../components/shared/Button";
 import Services from "./components/Services";
+import GeneralPractice from "./components/GeneralPractice";
+import Practices from "./components/Practices";
 
 const Home = () => {
   return (
@@ -39,6 +41,15 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <GeneralPractice />
+      <div className="bg-[#f5a14c] p-4 md:p-44">
+        <p className="font-medium text-2xl md:text-3xl text-white text-justify">
+          Primary care, prevention, alternative medicine and more – as your
+          family doctor in Rheindahlen, we are your trusted partner for all your
+          health needs and do our best to provide optimal treatment.
+        </p>
+      </div>
+      <Practices />
     </div>
   );
 };
